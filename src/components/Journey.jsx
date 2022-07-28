@@ -10,7 +10,7 @@ function Journey() {
         <>
 
             <Journeys id="journey">
-                <Institute title="Bachelor of Engineering (B.E), Computer Science" institution="Sinhgad Institute Of Technology And Science (SITS)" tenure="2019 - 2023" result="CGPA: 9.01" icon={<SchoolIcon className='mui-iconn' />} />
+                <Institute title="Bachelor of Engineering (B.E), Computer Science" institution="Sinhgad Institute Of Technology And Science (SITS)" tenure="2019 - 2023" result="CGPA: 9.26" icon={<SchoolIcon className='mui-iconn' />} />
 
                 <Institute title="Senior Secondary (XII), Science" institution="Swami Vivekanand English High School And Junior College (HSC board)" tenure="Year of completion: 2019" result="Percentage: 66.00%" icon={<MenuBookIcon className='mui-iconn' />} />
 

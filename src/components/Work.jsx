@@ -32,7 +32,7 @@ function Work(props) {
         },
         {
             name: 'Old Portfolio',
-            url: 'https://student9970.github.io/demo-portfolio.github.io/',
+            url: 'https://student9970.github.io/portfolio.github.io/',
             image: './images/oldportfolio.png'
         },
         {

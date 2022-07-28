@@ -1,5 +1,6 @@
 {
     "name": "portfolio",
+    "homepage": "https://Student9970.github.io/portfolio/",
     "version": "0.1.0",
     "private": true,
     "dependencies": {
@@ -13,6 +14,7 @@
         "@testing-library/react": "^13.1.1",
         "@testing-library/user-event": "^13.5.0",
         "framer-motion": "^6.3.11",
+        "gh-pages": "^4.0.0",
         "randomcolor": "^0.6.2",
         "react": "^18.1.0",
         "react-dom": "^18.1.0",
@@ -27,6 +29,8 @@
         "@mui/styled-engine": "npm:@mui/styled-engine-sc@latest"
     },
     "scripts": {
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
         "test": "react-scripts test",

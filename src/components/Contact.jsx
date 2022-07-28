@@ -73,13 +73,13 @@ const Contact = () => {
 
                 </Socials>
 
-                <Form autocomplete="off">
+                <Form autocomplete="off" action='https://formsubmit.co/au9970@gmail.com' method='POST'>
 
                     <div className="contact_info">
 
                         <div className="form_element first_name" style={{ marginTop: 0, paddingTop: 0 }}>
                             <label htmlFor="first_name">First Name</label>
-                            <input type="text" id="first_name" onFocus={() => {
+                            <input type="text" id="first_name" name='FirstName' onFocus={() => {
                                 focusIn('first_name');
                             }} onBlur={() => {
                                 focusOut('first_name');
@@ -88,7 +88,7 @@ const Contact = () => {
 
                         <div className="form_element last_name" style={{ marginTop: 0, paddingTop: 0 }}>
                             <label htmlFor="last_name">Last Name</label>
-                            <input type="text" id="last_name" onFocus={() => {
+                            <input type="text" id="last_name" name='LastName' onFocus={() => {
                                 focusIn('last_name');
                             }} onBlur={() => {
                                 focusOut('last_name');
@@ -101,7 +101,7 @@ const Contact = () => {
 
                         <div className="form_element mail">
                             <label htmlFor="mail">Mail</label>
-                            <input type="text" id="mail" onFocus={() => {
+                            <input type="text" id="mail" name='Mail' onFocus={() => {
                                 focusIn('mail');
                             }} onBlur={() => {
                                 focusOut('mail');
@@ -110,7 +110,7 @@ const Contact = () => {
 
                         <div className="form_element phone">
                             <label htmlFor="phone">Phone</label>
-                            <input type="text" id="phone" onFocus={() => {
+                            <input type="text" id="phone" name='Phone' onFocus={() => {
                                 focusIn('phone');
                             }} onBlur={() => {
                                 focusOut('phone');
