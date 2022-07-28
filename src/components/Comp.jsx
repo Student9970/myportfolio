@@ -1,8 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { useInView } from 'react-intersection-observer'
-import { useEffect } from 'react'
-import { motion, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { introAnimation, titleAnimation } from './animation'
 import { useScroll } from './useScroll'
 
