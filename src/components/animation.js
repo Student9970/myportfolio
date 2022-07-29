@@ -84,7 +84,7 @@ export const iconn = {
 
 export const contactAnimation = {
     hidden: {
-        y: "100vh",
+        y: "20vh",
         opacity: 0
     },
     show: {
