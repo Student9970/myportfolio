@@ -16,7 +16,7 @@ function App() {
   return (
     <Routes>
       <Route
-        path="/myportfolio"
+        path="/"
         element={
           <motion.div initial="hidden" animate="show" className="App">
             {/* <Header /> */}
@@ -24,7 +24,7 @@ function App() {
 
             <Comp
               title="About"
-              bgCol="linear-gradient(-45deg, #C02425, #F0CB35);"
+              bgCol="linear-gradient(-45deg, #C02425, #F0CB35)"
               col="#fff"
               content={<About />}
               emphasised_text="Who am I?"
@@ -40,16 +40,14 @@ function App() {
 
             <Comp
               title="My Journey"
-              bgCol="linear-gradient(-45deg, #FF4E50, #F9D423);"
+              bgCol="linear-gradient(-45deg, #FF4E50, #F9D423)"
               col="#fff"
               content={<Journey />}
               emphasised_text="How I became a Dev?"
             />
 
             <Work />
-
             <Contact />
-
             <Footer />
           </motion.div>
         }
