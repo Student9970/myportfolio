@@ -1,38 +1,68 @@
-import './App.css'
-import Header from './components/Header'
-import Comp from './components/Comp'
-import Intro from './components/Intro'
-import About from './components/About'
-import Skills from './components/Skills'
-import Journey from './components/Journey'
-import Work from './components/Work'
-import Contact from './components/Contact'
-import Footer from './components/Footer'
-import { motion } from 'framer-motion'
-import { Routes, Route } from 'react-router-dom'
+import "./App.css";
+import Header from "./components/Header";
+import Comp from "./components/Comp";
+import Intro from "./components/Intro";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Journey from "./components/Journey";
+import Work from "./components/Work";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import { motion } from "framer-motion";
+import { Routes, Route } from "react-router-dom";
+import PrivacyPolicy from "./components/PrivacyPolicy";
 
 function App() {
   return (
+    <Routes>
+      <Route
+        path="/myportfolio"
+        element={
+          <motion.div initial="hidden" animate="show" className="App">
+            {/* <Header /> */}
+            <Intro />
 
-    <motion.div initial="hidden" animate="show" className="App">
+            <Comp
+              title="About"
+              bgCol="linear-gradient(-45deg, #C02425, #F0CB35);"
+              col="#fff"
+              content={<About />}
+              emphasised_text="Who am I?"
+            />
 
-      {/* <Header /> */}
-      <Intro />
+            <Comp
+              title="Skills"
+              bgCol="#000000"
+              col="#fff"
+              content={<Skills />}
+              emphasised_text="My Talents"
+            />
 
-      <Comp title="About" bgCol="linear-gradient(-45deg, #C02425, #F0CB35);" col="#fff" content={<About />} emphasised_text="Who am I?" />
+            <Comp
+              title="My Journey"
+              bgCol="linear-gradient(-45deg, #FF4E50, #F9D423);"
+              col="#fff"
+              content={<Journey />}
+              emphasised_text="How I became a Dev?"
+            />
 
-      <Comp title="Skills" bgCol="#000000" col="#fff" content={<Skills />} emphasised_text="My Talents" />
+            <Work />
 
-      <Comp title="My Journey" bgCol="linear-gradient(-45deg, #FF4E50, #F9D423);" col="#fff" content={<Journey />} emphasised_text="How I became a Dev?" />
+            <Contact />
 
-      <Work />
-
-      <Contact />
-
-      <Footer />
-
-    </motion.div>
-
+            <Footer />
+          </motion.div>
+        }
+      />
+      <Route
+        path="/privacypolicy"
+        element={
+          <div>
+            <PrivacyPolicy />
+          </div>
+        }
+      />
+    </Routes>
   );
 }
 
